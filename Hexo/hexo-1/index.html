@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Hexo,">
 
 
 
@@ -114,17 +114,18 @@
 
 
 
-<meta name="description" content="本博客为个人生活记录点滴,Java学习知识积累">
-<meta name="keywords" content="Java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Feng-DD In Java">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="搭建这个博客，前前后后花费了近一周的时间，因为Git、Github、Hexo等不熟练的原因，导致这个博客，前前后后搭建了四次，我哭了，你萌呢？，下面我来罗列一些，自己碰到的坑 坑one 想要重新搭建博客项目时  错误的选择：npm unintall hexo 卸载 Hexo 组件 正确的选择：在本地删除该项目，重新生成一个 Hexo 项目   坑two 想要将博客项目的文章交由 git 管理  错">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客搭建的坑">
+<meta property="og:url" content="http://yoursite.com/Hexo/hexo-1/index.html">
 <meta property="og:site_name" content="Feng-DD In Java">
-<meta property="og:description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta property="og:description" content="搭建这个博客，前前后后花费了近一周的时间，因为Git、Github、Hexo等不熟练的原因，导致这个博客，前前后后搭建了四次，我哭了，你萌呢？，下面我来罗列一些，自己碰到的坑 坑one 想要重新搭建博客项目时  错误的选择：npm unintall hexo 卸载 Hexo 组件 正确的选择：在本地删除该项目，重新生成一个 Hexo 项目   坑two 想要将博客项目的文章交由 git 管理  错">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-29T03:13:43.480Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Feng-DD In Java">
-<meta name="twitter:description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta name="twitter:title" content="Hexo博客搭建的坑">
+<meta name="twitter:description" content="搭建这个博客，前前后后花费了近一周的时间，因为Git、Github、Hexo等不熟练的原因，导致这个博客，前前后后搭建了四次，我哭了，你萌呢？，下面我来罗列一些，自己碰到的坑 坑one 想要重新搭建博客项目时  错误的选择：npm unintall hexo 卸载 Hexo 组件 正确的选择：在本地删除该项目，重新生成一个 Hexo 项目   坑two 想要将博客项目的文章交由 git 管理  错">
 
 
 
@@ -154,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/Hexo/hexo-1/">
 
 
 
 
 
-  <title>Feng-DD In Java</title>
+  <title>Hexo博客搭建的坑 | Feng-DD In Java</title>
   
 
 
@@ -190,8 +191,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <!-- 右上角 fork me设置 github挂件 -->
     <a href="https://github.com/feng-dd" class="github-corner" aria-label="View source on GitHub">
@@ -333,9 +333,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -365,9 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Hexo/hexo-1/" itemprop="url">Hexo博客搭建的坑</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hexo博客搭建的坑</h1>
         
 
         <div class="post-meta">
@@ -473,23 +471,22 @@
       
 
       
-        
-          
-          搭建这个博客，前前后后花费了近一周的时间，因为Git、Github、Hexo等不熟练的原因，导致这个博客，前前后后搭建了四次，我哭了，你萌呢？，下面我来罗列一些，自己碰到的坑
-坑one
-想要重新搭建博客项目时
+        <p>搭建这个博客，前前后后花费了近一周的时间，因为Git、Github、Hexo等不熟练的原因，导致这<br>个博客，前前后后搭建了四次，<strong>我哭了，你萌呢？</strong>，下面我来罗列一些，自己碰到的坑</p>
+<h3 id="坑one"><a href="#坑one" class="headerlink" title="坑one"></a>坑one</h3><blockquote>
+<p>想要重新搭建博客项目时</p>
+<ul>
+<li>错误的选择：<code>npm unintall hexo</code> 卸载 Hexo 组件</li>
+<li>正确的选择：在本地删除该项目，重新生成一个 Hexo 项目</li>
+</ul>
+</blockquote>
+<h3 id="坑two"><a href="#坑two" class="headerlink" title="坑two"></a>坑two</h3><blockquote>
+<p>想要将博客项目的文章交由 git 管理</p>
+<ul>
+<li>错误的选择：将本地项目中的根目录全部交由github管理，瞎 <del>G2</del> 搞，贼乱！</li>
+<li>正确的选择：将本地项目中的根目录中的 public 目录设置为本地仓库，关联 github</li>
+</ul>
+</blockquote>
 
-错误的选择：npm unintall hexo 卸载 Hexo 组件
-正确的选择：在本地
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Hexo/hexo-1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -497,6 +494,9 @@
     
 
     <div>
+      
+      
+
       
     </div>
 
@@ -508,413 +508,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Java/Java集合/conllcetionandmap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯大大">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Feng-DD In Java">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Java/Java集合/conllcetionandmap/" itemprop="url">Java集合容器-快速了解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T13:04:31+08:00">
-                2019-04-26
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-29T11:18:37+08:00">
-                2019-04-29
-              </time>
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Java集合/" itemprop="url" rel="index">
-                    <span itemprop="name">Java集合</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+          <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/Java/Java集合/conllcetionandmap/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Java/Java集合/conllcetionandmap/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/Java/Java集合/conllcetionandmap/" class="leancloud_visitors" data-flag-title="Java集合容器-快速了解">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          Java 集合容器Collection 接口：存储对象的集合 Map 接口：存储键值对（俩个对象）的映射表
-容器中的设计模式迭代器模式
-Iterable 接口遍历聚合对象
-foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数组类型转换为 List 类型 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Java/Java集合/conllcetionandmap/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Java/Java集合/conllcetionandmap/" rel="next" title="Java集合容器-快速了解">
+                <i class="fa fa-chevron-left"></i> Java集合容器-快速了解
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/数据结构/树/tree/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯大大">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Feng-DD In Java">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/数据结构/树/tree/" itemprop="url">二叉树-概述</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-25T16:45:23+08:00">
-                2019-04-25
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-29T11:20:00+08:00">
-                2019-04-29
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构/树/" itemprop="url" rel="index">
-                    <span itemprop="name">树</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/数据结构/树/tree/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="数据结构/树/tree/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/数据结构/树/tree/" class="leancloud_visitors" data-flag-title="二叉树-概述">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          二叉树种类二叉树根节点叶子节点兄弟节点父节点子节点
-满二叉树树的深度h与最大层数k相等叶子节点的个数为2的k-1次方节点总数为2的k次方-1（奇数）
-完全二叉树树的最大深度h，1~h-1层的节点都是满的（最大数），h层的节点的集中在最左边只允许h层可以有空缺任意节点的右子树深度为j，则左子树深度为j
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/数据结构/树/tree/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -924,10 +547,37 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -935,6 +585,20 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -955,8 +619,17 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1053,6 +726,22 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#坑one"><span class="nav-number">1.</span> <span class="nav-text">坑one</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#坑two"><span class="nav-number">2.</span> <span class="nav-text">坑two</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1260,6 +949,10 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1277,6 +970,18 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/Hexo/hexo-1/';
+          this.page.identifier = 'Hexo/hexo-1/';
+          this.page.title = 'Hexo博客搭建的坑';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   

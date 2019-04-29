@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="二叉树,数据结构,">
 
 
 
@@ -114,17 +114,18 @@
 
 
 
-<meta name="description" content="本博客为个人生活记录点滴,Java学习知识积累">
-<meta name="keywords" content="Java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Feng-DD In Java">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="二叉树种类二叉树根节点叶子节点兄弟节点父节点子节点 满二叉树树的深度h与最大层数k相等叶子节点的个数为2的k-1次方节点总数为2的k次方-1（奇数） 完全二叉树树的最大深度h，1~h-1层的节点都是满的（最大数），h层的节点的集中在最左边只允许h层可以有空缺任意节点的右子树深度为j，则左子树深度为j或j+1树有个n个节点，则深度为log2^n+1满二叉树是完全二叉树，完全二叉树不一定是满二叉树 平">
+<meta name="keywords" content="二叉树,数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二叉树-概述">
+<meta property="og:url" content="http://yoursite.com/数据结构/树/tree/index.html">
 <meta property="og:site_name" content="Feng-DD In Java">
-<meta property="og:description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta property="og:description" content="二叉树种类二叉树根节点叶子节点兄弟节点父节点子节点 满二叉树树的深度h与最大层数k相等叶子节点的个数为2的k-1次方节点总数为2的k次方-1（奇数） 完全二叉树树的最大深度h，1~h-1层的节点都是满的（最大数），h层的节点的集中在最左边只允许h层可以有空缺任意节点的右子树深度为j，则左子树深度为j或j+1树有个n个节点，则深度为log2^n+1满二叉树是完全二叉树，完全二叉树不一定是满二叉树 平">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-29T03:20:00.351Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Feng-DD In Java">
-<meta name="twitter:description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta name="twitter:title" content="二叉树-概述">
+<meta name="twitter:description" content="二叉树种类二叉树根节点叶子节点兄弟节点父节点子节点 满二叉树树的深度h与最大层数k相等叶子节点的个数为2的k-1次方节点总数为2的k次方-1（奇数） 完全二叉树树的最大深度h，1~h-1层的节点都是满的（最大数），h层的节点的集中在最左边只允许h层可以有空缺任意节点的右子树深度为j，则左子树深度为j或j+1树有个n个节点，则深度为log2^n+1满二叉树是完全二叉树，完全二叉树不一定是满二叉树 平">
 
 
 
@@ -154,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/数据结构/树/tree/">
 
 
 
 
 
-  <title>Feng-DD In Java</title>
+  <title>二叉树-概述 | Feng-DD In Java</title>
   
 
 
@@ -190,8 +191,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <!-- 右上角 fork me设置 github挂件 -->
     <a href="https://github.com/feng-dd" class="github-corner" aria-label="View source on GitHub">
@@ -333,400 +333,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Hexo/hexo-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯大大">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Feng-DD In Java">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Hexo/hexo-1/" itemprop="url">Hexo博客搭建的坑</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T10:54:26+08:00">
-                2019-04-29
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-29T11:13:43+08:00">
-                2019-04-29
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/Hexo/hexo-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Hexo/hexo-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/Hexo/hexo-1/" class="leancloud_visitors" data-flag-title="Hexo博客搭建的坑">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          搭建这个博客，前前后后花费了近一周的时间，因为Git、Github、Hexo等不熟练的原因，导致这个博客，前前后后搭建了四次，我哭了，你萌呢？，下面我来罗列一些，自己碰到的坑
-坑one
-想要重新搭建博客项目时
-
-错误的选择：npm unintall hexo 卸载 Hexo 组件
-正确的选择：在本地
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Hexo/hexo-1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Java/Java集合/conllcetionandmap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯大大">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Feng-DD In Java">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Java/Java集合/conllcetionandmap/" itemprop="url">Java集合容器-快速了解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T13:04:31+08:00">
-                2019-04-26
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-29T11:18:37+08:00">
-                2019-04-29
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Java集合/" itemprop="url" rel="index">
-                    <span itemprop="name">Java集合</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/Java/Java集合/conllcetionandmap/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Java/Java集合/conllcetionandmap/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/Java/Java集合/conllcetionandmap/" class="leancloud_visitors" data-flag-title="Java集合容器-快速了解">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Java 集合容器Collection 接口：存储对象的集合 Map 接口：存储键值对（俩个对象）的映射表
-容器中的设计模式迭代器模式
-Iterable 接口遍历聚合对象
-foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数组类型转换为 List 类型 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Java/Java集合/conllcetionandmap/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -756,9 +365,7 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/数据结构/树/tree/" itemprop="url">二叉树-概述</a></h1>
+          <h1 class="post-title" itemprop="name headline">二叉树-概述</h1>
         
 
         <div class="post-meta">
@@ -875,20 +482,17 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
       
 
       
-        
-          
-          二叉树种类二叉树根节点叶子节点兄弟节点父节点子节点
-满二叉树树的深度h与最大层数k相等叶子节点的个数为2的k-1次方节点总数为2的k次方-1（奇数）
-完全二叉树树的最大深度h，1~h-1层的节点都是满的（最大数），h层的节点的集中在最左边只允许h层可以有空缺任意节点的右子树深度为j，则左子树深度为j
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/数据结构/树/tree/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h1 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h1><h2 id="种类"><a href="#种类" class="headerlink" title="种类"></a>种类</h2><h3 id="二叉树-1"><a href="#二叉树-1" class="headerlink" title="二叉树"></a>二叉树</h3><p>根节点<br>叶子节点<br>兄弟节点<br>父节点<br>子节点</p>
+<h3 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h3><p>树的深度h与最大层数k相等<br>叶子节点的个数为2的k-1次方<br>节点总数为2的k次方-1（奇数）</p>
+<h3 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h3><p>树的最大深度h，1~h-1层的节点都是满的（最大数），h层的节点的集中在最左边<br>只允许h层可以有空缺<br>任意节点的右子树深度为j，则左子树深度为j或j+1<br>树有个n个节点，则深度为log2^n+1<br>满二叉树是完全二叉树，完全二叉树不一定是满二叉树</p>
+<h3 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h3><p>空树或左右两子树的高度差的绝对值不超过1<br>左右子树都是平衡二叉树</p>
+<h3 id="二叉查找树"><a href="#二叉查找树" class="headerlink" title="二叉查找树"></a>二叉查找树</h3><p>若左子树不空，则左子树的节点值都小于或等于它的根节点值<br>若右子树不空，则右子树的节点值都大于或等于它的根节点值<br>左、右子树也是二叉查找树</p>
+<h3 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h3><p>节点是红、黑颜色的平衡二叉查找树<br>根节点、叶子节点是黑色<br>红色节点的子节点必须是黑色<br>任一节点到叶子节点的的所有简单路径中，黑色节点数一样</p>
+<h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2><p>根据根节点的顺序分类<br>根节点，除了叶子节点，每个节点都是子节点的根节点，从根节点依次开始</p>
+<h3 id="前序"><a href="#前序" class="headerlink" title="前序"></a>前序</h3><p>跟左右</p>
+<h3 id="中序"><a href="#中序" class="headerlink" title="中序"></a>中序</h3><p>左跟右</p>
+<h3 id="后序"><a href="#后序" class="headerlink" title="后序"></a>后序</h3><p>左右跟</p>
+
       
     </div>
     
@@ -896,6 +500,9 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
     
 
     <div>
+      
+      
+
       
     </div>
 
@@ -907,14 +514,36 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+          <a href="/tags/二叉树-数据结构/" rel="tag"><i class="fa fa-tag"></i> 二叉树,数据结构</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Java/Java集合/conllcetionandmap/" rel="prev" title="Java集合容器-快速了解">
+                Java集合容器-快速了解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -924,10 +553,37 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -935,6 +591,20 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -955,8 +625,17 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1053,6 +732,22 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#二叉树"><span class="nav-number">1.</span> <span class="nav-text">二叉树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#种类"><span class="nav-number">1.1.</span> <span class="nav-text">种类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二叉树-1"><span class="nav-number">1.1.1.</span> <span class="nav-text">二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#满二叉树"><span class="nav-number">1.1.2.</span> <span class="nav-text">满二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#完全二叉树"><span class="nav-number">1.1.3.</span> <span class="nav-text">完全二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#平衡二叉树"><span class="nav-number">1.1.4.</span> <span class="nav-text">平衡二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二叉查找树"><span class="nav-number">1.1.5.</span> <span class="nav-text">二叉查找树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#红黑树"><span class="nav-number">1.1.6.</span> <span class="nav-text">红黑树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遍历"><span class="nav-number">1.2.</span> <span class="nav-text">遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前序"><span class="nav-number">1.2.1.</span> <span class="nav-text">前序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中序"><span class="nav-number">1.2.2.</span> <span class="nav-text">中序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后序"><span class="nav-number">1.2.3.</span> <span class="nav-text">后序</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1260,6 +955,10 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1277,6 +976,18 @@ foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数�
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/数据结构/树/tree/';
+          this.page.identifier = '数据结构/树/tree/';
+          this.page.title = '二叉树-概述';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
