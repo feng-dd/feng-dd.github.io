@@ -122,10 +122,12 @@
 <meta property="og:site_name" content="Feng-DD In Java">
 <meta property="og:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 上一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1 Bo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-30T08:53:43.670Z">
+<meta property="og:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png">
+<meta property="og:updated_time" content="2019-04-30T22:50:53.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="菜鸟冯的面试突击 - 01">
 <meta name="twitter:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 上一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1 Bo">
+<meta name="twitter:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png">
 
 
 
@@ -393,8 +395,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-30T16:53:43+08:00">
-                2019-04-30
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-01T06:50:53+08:00">
+                2019-05-01
               </time>
             
           </span>
@@ -528,8 +530,9 @@
 </tbody>
 </table>
 <blockquote>
-<p>自动装箱和拆箱(基本数据类型与对应包装类之间的转换)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer x = 2; //自动装箱</span><br><span class="line">int y = x; //自动拆箱</span><br></pre></td></tr></table></figure></p>
+<p>自动装箱和拆箱(基本数据类型与对应包装类之间的转换)</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer x = 2; //自动装箱</span><br><span class="line">int y = x; //自动拆箱</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>缓存池</p>
 </blockquote>
@@ -616,6 +619,44 @@
 <li>Java 7 中，String Pool 放在堆内存中。因为永久代空间有限，大量使用字符串，会造成 OutOfMemoryError 错误。</li>
 </ul>
 <p>String 构造函数之一:将一个字符串作为另一个字符串的构造参数时，俩个字符串指向同一个 value 数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public String(String original) &#123;</span><br><span class="line">    this.value = original.value;</span><br><span class="line">    this.hash = original.hash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="三、参数传递"><a href="#三、参数传递" class="headerlink" title="三、参数传递"></a>三、参数传递</h2><p>在 Java 中的，所有参数都是以值传递的方式传入方法中。</p>
+<blockquote>
+<p>参数是基本数据类型时，传递的是参数值的拷贝</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class A&#123;</span><br><span class="line">    private int num;</span><br><span class="line">    public void test(int i) &#123;</span><br><span class="line">        System.out.print(&quot;传入的参数值为：&quot;+i);</span><br><span class="line">        i *= 5;</span><br><span class="line">        System.out.print(&quot;修改后的形参i的值为：&quot;+i);</span><br><span class="line">        System.out.print(&quot;实参num的值：&quot;+this.num);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        A a = new A();</span><br><span class="line">        a.num = 100;</span><br><span class="line">        a.test(num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果是：<br>    100<br>    500<br>    100</p>
+<p>原理：传入test()方法的，是 num 属性值的拷贝，对形参的改变并不会使实参有变化。</p>
+<blockquote>
+<p>参数是引用数据类型时，传递的是引用对象的内存空间地址；当方法内改变该对象的属性值时，就是永久改变。</p>
+</blockquote>
+<blockquote>
+<p>参数是 String 类型时，传递的是内存空间地址；当方法内对字符串改变时，由于 String 类型的不可变性，<br>会创建一个新的 String 对象，而方法外的 String 引用的不是新的对象，所以方法外 String 值没变。 </p>
+</blockquote>
+<h2 id="四、类型转换"><a href="#四、类型转换" class="headerlink" title="四、类型转换"></a>四、类型转换</h2><blockquote>
+<p>基本数据类型之间的转换</p>
+</blockquote>
+<p><img src="/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png" alt="类型转换"></p>
+<ol>
+<li>布尔型不可以转换</li>
+<li>byte 与 char 不可以互相转换(取值范围决定)</li>
+<li>short 与 char 不可以互相转换(取值范围决定)</li>
+<li>byte 可以自动提升到 short(取值范围决定)</li>
+</ol>
+<blockquote>
+<p>强制类型转换</p>
+</blockquote>
+<ol>
+<li><p>取值必须在转换类型的范围内,否则会发生数据错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a = 233;</span><br><span class="line">byte b = (byte) a;</span><br><span class="line">System.out.print(b); //-23</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>double 转 float 可能出现精度丢失</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double c = 23.33;</span><br><span class="line">float d = (float) c;</span><br><span class="line">System.out.print(d); //23.3f</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>进行运算时，数据类型会自动提升至运算符俩侧的较大类型，依次类推；运算完毕后，赋值符号左侧的类型较小时，需要强转。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">byte a = 3 + 5; // a=8</span><br><span class="line">int b = 3,c = 5;</span><br><span class="line">byte d = b + c; //编译错误</span><br><span class="line">byte d = (byte) b + c; // d=8</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -868,7 +909,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础-上"><span class="nav-number">1.</span> <span class="nav-text">Java 基础 上</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、String"><span class="nav-number">1.2.</span> <span class="nav-text">(*)二、String</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#String-的-intern-方法"><span class="nav-number">1.2.0.0.1.</span> <span class="nav-text">String 的 intern() 方法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础-上"><span class="nav-number">1.</span> <span class="nav-text">Java 基础 上</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、String"><span class="nav-number">1.2.</span> <span class="nav-text">(*)二、String</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#String-的-intern-方法"><span class="nav-number">1.2.0.0.1.</span> <span class="nav-text">String 的 intern() 方法</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#三、参数传递"><span class="nav-number">1.3.</span> <span class="nav-text">三、参数传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、类型转换"><span class="nav-number">1.4.</span> <span class="nav-text">四、类型转换</span></a></li></div>
             
 
           </div>
