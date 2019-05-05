@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Java,">
 
 
 
@@ -114,17 +114,18 @@
 
 
 
-<meta name="description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta name="description" content="Java 集合容器Collection 接口：存储对象的集合 Map 接口：存储键值对（俩个对象）的映射表 容器中的设计模式迭代器模式 Iterable 接口遍历聚合对象 foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数组类型转换为 List 类型  public static &amp;lt;T&amp;gt; List&amp;lt;T&amp;gt; asList(T...">
 <meta name="keywords" content="Java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Feng-DD In Java">
-<meta property="og:url" content="http://yoursite.com/tags/Hexo/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java集合容器-快速了解">
+<meta property="og:url" content="http://yoursite.com/Java/Java集合/conllectionandmap/index.html">
 <meta property="og:site_name" content="Feng-DD In Java">
-<meta property="og:description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta property="og:description" content="Java 集合容器Collection 接口：存储对象的集合 Map 接口：存储键值对（俩个对象）的映射表 容器中的设计模式迭代器模式 Iterable 接口遍历聚合对象 foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数组类型转换为 List 类型  public static &amp;lt;T&amp;gt; List&amp;lt;T&amp;gt; asList(T...">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-29T03:18:37.392Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Feng-DD In Java">
-<meta name="twitter:description" content="本博客为个人生活记录点滴,Java学习知识积累">
+<meta name="twitter:title" content="Java集合容器-快速了解">
+<meta name="twitter:description" content="Java 集合容器Collection 接口：存储对象的集合 Map 接口：存储键值对（俩个对象）的映射表 容器中的设计模式迭代器模式 Iterable 接口遍历聚合对象 foreach 循环遍历适配器模式如：java.util.Arrays#asList() 可以把数组类型转换为 List 类型  public static &amp;lt;T&amp;gt; List&amp;lt;T&amp;gt; asList(T...">
 
 
 
@@ -154,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Hexo/">
+  <link rel="canonical" href="http://yoursite.com/Java/Java集合/conllectionandmap/">
 
 
 
 
 
-  <title>标签: Hexo | Feng-DD In Java</title>
+  <title>Java集合容器-快速了解 | Feng-DD In Java</title>
   
 
 
@@ -190,7 +191,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <!-- 右上角 fork me设置 github挂件 -->
     <a href="https://github.com/feng-dd" class="github-corner" aria-label="View source on GitHub">
@@ -333,52 +334,324 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Hexo<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Java/Java集合/conllectionandmap/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="冯大大">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Feng-DD In Java">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/Hexo/hexo-1/" itemprop="url">
-              
-                <span itemprop="name">Hexo博客搭建的坑</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Java集合容器-快速了解</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-29T10:54:26+08:00" content="2019-04-29">
-          04-29
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T13:04:31+08:00">
+                2019-04-26
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-04-29T11:18:37+08:00">
+                2019-04-29
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Java集合/" itemprop="url" rel="index">
+                    <span itemprop="name">Java集合</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Java/Java集合/conllectionandmap/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Java/Java集合/conllectionandmap/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/Java/Java集合/conllectionandmap/" class="leancloud_visitors" data-flag-title="Java集合容器-快速了解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Java-集合容器"><a href="#Java-集合容器" class="headerlink" title="Java 集合容器"></a>Java 集合容器</h1><p>Collection 接口：存储对象的集合 <br><br>Map 接口：存储键值对（俩个对象）的映射表</p>
+<h2 id="容器中的设计模式"><a href="#容器中的设计模式" class="headerlink" title="容器中的设计模式"></a>容器中的设计模式</h2><h3 id="迭代器模式"><a href="#迭代器模式" class="headerlink" title="迭代器模式"></a>迭代器模式</h3><ol>
+<li>Iterable 接口遍历聚合对象</li>
+<li>foreach 循环遍历<h3 id="适配器模式"><a href="#适配器模式" class="headerlink" title="适配器模式"></a>适配器模式</h3>如：java.util.Arrays#asList() 可以把数组类型转换为 List 类型 <br><br> <code>public static &lt;T&gt; List&lt;T&gt; asList(T... a)</code><br>asList() 的参数为泛型的变长参数，不能使用基本类型数组作为参数，只能使用相应的包装类型数组。</li>
+</ol>
+<h2 id="Collection-接口"><a href="#Collection-接口" class="headerlink" title="Collection 接口"></a>Collection 接口</h2><p>List 接口、Set接口、Queue接口</p>
+<h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><p>无序性、不可重复、允许null值。<br></p>
+<ol>
+<li>HashSet：基于哈希表实现；<br></li>
+<li>TreeSet：基于红黑树实现，支持有序性操作；<br></li>
+<li>LinkedHashSet：具有 HashSet 的查找效率，且内部使用双向链表维护元素的插入顺序；<br></li>
+</ol>
+<h3 id="Queue"><a href="#Queue" class="headerlink" title="Queue"></a>Queue</h3><ol>
+<li>LinkedList：可以用它来实现双向队列。</li>
+<li>PriorityQueue：基于堆结构实现，可以用它来实现优先队列</li>
+</ol>
+<h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><p>有序性、可重复、允许null值</p>
+<h4 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h4><p>底层是数组，可通过索引访问，因此查询效率高，但添加和删除数据的效率低，会伴随后面数据的移动 <br><br>底层是动态数组，因此，支持随机访问 <br></p>
+<h5 id="扩容"><a href="#扩容" class="headerlink" title="扩容"></a>扩容</h5><p>数组默认大小是10，当添加元素时，ensureCapacityInternal() 会保证容量足够；<br><br>当不够时，会调用 grow() 进行扩容，新容量是就容量的1.5倍 <code>newCapacity = oldCapacity + oldCapacity &gt;&gt; 1</code>；<br><br>当同时添加的元素超过扩容的容量时，会扩容到元素总数的容量，比如同时添加6个元素，Arraylist会扩容到16。<br>扩容操作时，会将旧数组复制到新数组中，代价很高，因此，最好在创建时就指定好合适的容量大小，减少扩容次数。</p>
+<h5 id="删除元素-remove"><a href="#删除元素-remove" class="headerlink" title="删除元素 remove()"></a>删除元素 remove()</h5><p>删除时，会调用 System.arraycopy() 将 index 后面的元素向前移动，操作的时间复杂度是 O(N)，<br>因此，ArrayList 删除元素的代价很高。</p>
+<h5 id="Fail-Fast"><a href="#Fail-Fast" class="headerlink" title="Fail-Fast"></a>Fail-Fast</h5><p>modCount 用来记录 ArrayList 结构发生变化的次数，也就是添加、删除元素或调整内部数组大小的操作次数。 <br><br>在进行序列化或迭代时，需要比较前后的 modCount 是否改变，如果改变了，会抛出 ConcurrentModificationException。<br><br>也就是，在进行序列化或迭代时，不可以进行添加或删除的操作(阿里手册上有相关的描述)。</p>
+<h5 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h5><p>由于动态扩容的原因，ArrayList的某些元素并没有被使用，因此无需将每个元素都序列化。<br><br>transcation 关键字修饰数组，默认不会被序列化，ArrayList 通过 wirteObject() &amp; readObject() 控制只序列化有数据的元素。</p>
+<h4 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h4><p>#####同步<br>Vector 与 ArrayList 的实现类似，区别是使用了 synchronized 进行了同步。</p>
+<h5 id="与-ArrayList-相比"><a href="#与-ArrayList-相比" class="headerlink" title="与 ArrayList 相比"></a>与 ArrayList 相比</h5><p>Vector 是线程同步的，开销较大，访问较慢，推荐使用 ArrayList ，同步可以有程序员进行控制。<br><br>Vector 每次扩容请求其 2 倍的容量大小，ArrayList 为 1.5 倍。</p>
+<h5 id="替代方案"><a href="#替代方案" class="headerlink" title="替代方案"></a>替代方案</h5><ol>
+<li>JUC 包下 CopyOnWriteArrayList 类。<br><br><code>List&lt;String&gt; list = new CopyOnWriteArrayList&lt;&gt;();</code></li>
+<li>通过 Collections.synchronizedList() 方法将 ArrayList 变为线程安全的。<br><br><code>List&lt;String&gt; list = new ArrayList&lt;&gt;();</code><br><br><code>List&lt;String&gt; synList = Collections.synchronizedList(list);</code></li>
+</ol>
+<h5 id="CopyOnWriteArrayList"><a href="#CopyOnWriteArrayList" class="headerlink" title="CopyOnWriteArrayList"></a>CopyOnWriteArrayList</h5><h6 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h6><p>读操作在原始数据上进行，写操作在一个复制的新数组上进行。 <br><br>写操作加锁，防止并发写入的数据丢失；写操作结束，将原数组指向新数组。 <br></p>
+<h6 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h6><p>优点：<br><br>CopyOnWriteArrayList 在写操作时，可以进行读操作，提高了读操作的性能，适用于读多写少的应用场景。<br><br>缺点：<br></p>
+<ol>
+<li>写操作需要复制新数组，所以内存占用是原来的两倍左右。<br></li>
+<li>当部分写操作没有同步到数组时，读操作不具有实时性。<br></li>
+</ol>
+<h4 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h4><p>基于双向链表实现,Node 存储链表的节点信息，每个链表节点都维护了 first 指针和 last 指针，因此只能顺序访问。<br></p>
+<h5 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h5><p>可用作栈、队列和双向队列。</p>
+<h5 id="与-ArrayList-相比-1"><a href="#与-ArrayList-相比-1" class="headerlink" title="与 ArrayList 相比"></a>与 ArrayList 相比</h5><ol>
+<li>底层实现方式不同，A 基于动态数组，L 基于双向链表；</li>
+<li>A 支持随机访问，L 不支持；</li>
+<li>A 查询效率更高，L 在任意位置添加和删除效率更高；</li>
+</ol>
+<h2 id="Map-接口"><a href="#Map-接口" class="headerlink" title="Map 接口"></a>Map 接口</h2><p>键唯一、值不唯一</p>
+<ol>
+<li>TreeMap：基于红黑树实现。</li>
+<li>HashTable：和 HashMap 类似，但它是线程安全的。它是遗留类，不应该去使用它。现在可以使用 ConcurrentHashMap 来支持线程安全，并且 ConcurrentHashMap 的效率会更高，因为 ConcurrentHashMap 引入了分段锁。</li>
+</ol>
+<h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><p>基于哈希表，默认初始大小为 16；<br><br>HashMap 构造函数允许用户传入的容量不是 2^n，因为它可以自动地将传入的容量转换为 2^n。</p>
+<h4 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h4><p>内部包含一个 Entry 数组 <code>transient Entry[] table;</code><br>Entry 是一个链表，存储着键值对。包含四个属性 key、value、next、hash；<br><br>即数组中的每个位置为一个桶，桶里包含一个链表。<br><br>同一个链表存放 hash 值相同的 Entry，HashMap 使用拉链法实现后插入元素在链表头部。</p>
+<h4 id="查询步骤"><a href="#查询步骤" class="headerlink" title="查询步骤"></a>查询步骤</h4><ol>
+<li>计算键值的 hashCode ，与桶的个数取余，得到桶下标。如：115 % 16 = 3；</li>
+<li>在链表上顺序查找，时间复杂度显然和链表的长度成正比<h4 id="插入-put"><a href="#插入-put" class="headerlink" title="插入 put"></a>插入 put</h4>HashMap 可以插入键为 null的键值对，因为 null 无法调用 hashCode() 计算桶下标，因此 HashMap 强制使用第0个桶存放键为 null的键值对。<br></li>
+<li>计算键值，得到桶下标</li>
+<li>使用链表的头插法，将新元素插入链表头部<h4 id="动态扩容"><a href="#动态扩容" class="headerlink" title="动态扩容"></a>动态扩容</h4>设 HashMap 的数组容量为 M，需要存储的键值对数量为 N，为提高查找的效率，每个链表的的长度大约为(N/M)，因此查询的复杂度为O(N/M)。<br><br>HashMap 会使用动态扩容，根据当前键值对数量，动态调整 M 值，使得 (N/M) 因可能小，从而降低查询成本。<br><br>扩容相关的参数主要有：capacity、size、threshold 和 load_factor<br></li>
+</ol>
+<ul>
+<li>capacity：数组容量，默认16 <br></li>
+<li>size：键值对数量 <br></li>
+<li>threshold：size 的临界值，当 size &gt;= threshold 时，必须进行扩容操作 <br></li>
+<li>loadFactor：装载因子，默认0.75，threshold = capacity * loadFactor <br><br>使用 resize() 进行扩容，没扩容后数组容量为原来的 2 倍；<br><br>扩容操作同样需要把 oldTable 的所有键值对重新插入 newTable 中。<h4 id="链表转红黑树"><a href="#链表转红黑树" class="headerlink" title="链表转红黑树"></a>链表转红黑树</h4>JDK1.8后，当链表长度 &gt;8 时，链表将转换为红黑树。<h4 id="与-HashTable-的比较"><a href="#与-HashTable-的比较" class="headerlink" title="与 HashTable 的比较"></a>与 HashTable 的比较</h4></li>
+</ul>
+<ol>
+<li>HashTable 使用 synchronized 进行线程同步</li>
+<li>HashMap 可以存放建为空的键值对</li>
+</ol>
+<h3 id="ConcurrentHashMap"><a href="#ConcurrentHashMap" class="headerlink" title="ConcurrentHashMap"></a>ConcurrentHashMap</h3><p>ConcurrentHashMap 在 HashMap 的基础上添加了分段锁(Segment)，每个分段锁维护几个桶(HashEntry)，多个线程可以同时访问不同分段锁上的桶，从而使其并发度更高（并发度就是 Segment 的个数）。<br><br>Segment 继承自 ReentrantLock。默认的并发级别为 16，也就是说默认创建 16 个 Segment。</p>
+<h4 id="size-操作"><a href="#size-操作" class="headerlink" title="size 操作"></a>size 操作</h4><p>每个 Segment 维护了一个 count 变量来统计该 Segment 中的键值对个数。执行 size 操作时，需要遍历所有 Segment 然后把 count 累计起来。<br><br>在执行 size 操作时先尝试不加锁，如果连续两次不加锁操作得到的结果一致，那么可以认为这个结果是正确的。<br><br>如果尝试的次数超过 2 次，就需要对每个 Segment 加锁。</p>
+<h4 id="JDK-1-8-的改动"><a href="#JDK-1-8-的改动" class="headerlink" title="JDK 1.8 的改动"></a>JDK 1.8 的改动</h4><p>JDK1.7采用分段锁机制来实现并发更新操作，核心类为 Segment，继承自重入锁 ReentrantLock；<br><br>JDK 1.8 使用了 CAS 操作来支持更高的并发度，在 CAS 操作失败时使用内置锁 synchronized；且链表过长时会转换为红黑树。</p>
+<h3 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h3><h4 id="存储结构-1"><a href="#存储结构-1" class="headerlink" title="存储结构"></a>存储结构</h4><p>基于哈希表，内部使用双向链表维护插入顺序或者 LRU 顺序 <br><br>LRU 顺序：每次访问一个节点时，将该节点移到链表尾部；从而保证链表尾部是最近访问的节点，链表首部是最近最久未使用的节点。<br>在 put 等操作之后执行时，会移除链表首部的节点。</p>
+<h4 id="使用场景-2"><a href="#使用场景-2" class="headerlink" title="使用场景"></a>使用场景</h4><p>使用 LinkedHashMap 实现的一个 LRU 缓存。</p>
+<ol>
+<li>设定最大缓存空间，开启 LRU 顺序；</li>
+<li>开启 LRU 顺序，使用 LinkedHashMap 的构造函数将 accessOrder 设置为 true；</li>
+<li>节点多于 MAX_ENTRIES ，移除链表首部的节点，覆盖 removeEldestEntry() 方法实现；</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+      
 
       
     </div>
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+          <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/数据结构/树/tree/" rel="next" title="二叉树-概述">
+                <i class="fa fa-chevron-left"></i> 二叉树-概述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Hexo/hexo-1/" rel="prev" title="Hexo博客搭建的坑">
+                Hexo博客搭建的坑 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -386,6 +659,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -406,8 +693,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -504,6 +800,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-集合容器"><span class="nav-number">1.</span> <span class="nav-text">Java 集合容器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#容器中的设计模式"><span class="nav-number">1.1.</span> <span class="nav-text">容器中的设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器模式"><span class="nav-number">1.1.1.</span> <span class="nav-text">迭代器模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#适配器模式"><span class="nav-number">1.1.2.</span> <span class="nav-text">适配器模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Collection-接口"><span class="nav-number">1.2.</span> <span class="nav-text">Collection 接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Set"><span class="nav-number">1.2.1.</span> <span class="nav-text">Set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Queue"><span class="nav-number">1.2.2.</span> <span class="nav-text">Queue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#List"><span class="nav-number">1.2.3.</span> <span class="nav-text">List</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ArrayList"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">ArrayList</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#扩容"><span class="nav-number">1.2.3.1.1.</span> <span class="nav-text">扩容</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除元素-remove"><span class="nav-number">1.2.3.1.2.</span> <span class="nav-text">删除元素 remove()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Fail-Fast"><span class="nav-number">1.2.3.1.3.</span> <span class="nav-text">Fail-Fast</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#序列化"><span class="nav-number">1.2.3.1.4.</span> <span class="nav-text">序列化</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Vector"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">Vector</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#与-ArrayList-相比"><span class="nav-number">1.2.3.2.1.</span> <span class="nav-text">与 ArrayList 相比</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#替代方案"><span class="nav-number">1.2.3.2.2.</span> <span class="nav-text">替代方案</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#CopyOnWriteArrayList"><span class="nav-number">1.2.3.2.3.</span> <span class="nav-text">CopyOnWriteArrayList</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#读写分离"><span class="nav-number">1.2.3.2.3.1.</span> <span class="nav-text">读写分离</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#使用场景"><span class="nav-number">1.2.3.2.3.2.</span> <span class="nav-text">使用场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LinkedList"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">LinkedList</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用场景-1"><span class="nav-number">1.2.3.3.1.</span> <span class="nav-text">使用场景</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#与-ArrayList-相比-1"><span class="nav-number">1.2.3.3.2.</span> <span class="nav-text">与 ArrayList 相比</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Map-接口"><span class="nav-number">1.3.</span> <span class="nav-text">Map 接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap"><span class="nav-number">1.3.1.</span> <span class="nav-text">HashMap</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存储结构"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">存储结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查询步骤"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">查询步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插入-put"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">插入 put</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态扩容"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">动态扩容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链表转红黑树"><span class="nav-number">1.3.1.5.</span> <span class="nav-text">链表转红黑树</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#与-HashTable-的比较"><span class="nav-number">1.3.1.6.</span> <span class="nav-text">与 HashTable 的比较</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ConcurrentHashMap"><span class="nav-number">1.3.2.</span> <span class="nav-text">ConcurrentHashMap</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#size-操作"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">size 操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JDK-1-8-的改动"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">JDK 1.8 的改动</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedHashMap"><span class="nav-number">1.3.3.</span> <span class="nav-text">LinkedHashMap</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存储结构-1"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">存储结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用场景-2"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">使用场景</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -711,6 +1023,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -728,6 +1044,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/Java/Java集合/conllectionandmap/';
+          this.page.identifier = 'Java/Java集合/conllectionandmap/';
+          this.page.title = 'Java集合容器-快速了解';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
