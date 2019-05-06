@@ -114,20 +114,18 @@
 
 
 
-<meta name="description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （一）一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1">
+<meta name="description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （三）一、反射 反射是什么？  “正射”：使用的类是已经确定好的，直接对该类实例化使用。 反射：在运行状态时，才确定要使用哪个类，此时无法使用 new关键字创建对象。通过动态获取对象信息和调用对象方法的功能。   123456789//「正射」Apple ap = new Apple(); /">
 <meta name="keywords" content="面试,Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="菜鸟冯的面试突击 - 01">
-<meta property="og:url" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/index.html">
+<meta property="og:title" content="菜鸟冯的面试突击 - 03">
+<meta property="og:url" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-03/index.html">
 <meta property="og:site_name" content="Feng-DD In Java">
-<meta property="og:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （一）一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1">
+<meta property="og:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （三）一、反射 反射是什么？  “正射”：使用的类是已经确定好的，直接对该类实例化使用。 反射：在运行状态时，才确定要使用哪个类，此时无法使用 new关键字创建对象。通过动态获取对象信息和调用对象方法的功能。   123456789//「正射」Apple ap = new Apple(); /">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png">
-<meta property="og:updated_time" content="2019-05-05T00:56:12.322Z">
+<meta property="og:updated_time" content="2019-05-06T06:36:36.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="菜鸟冯的面试突击 - 01">
-<meta name="twitter:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （一）一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1">
-<meta name="twitter:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png">
+<meta name="twitter:title" content="菜鸟冯的面试突击 - 03">
+<meta name="twitter:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （三）一、反射 反射是什么？  “正射”：使用的类是已经确定好的，直接对该类实例化使用。 反射：在运行状态时，才确定要使用哪个类，此时无法使用 new关键字创建对象。通过动态获取对象信息和调用对象方法的功能。   123456789//「正射」Apple ap = new Apple(); /">
 
 
 
@@ -157,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/">
+  <link rel="canonical" href="http://yoursite.com/Java面试/JavaInterviewMustKnow-03/">
 
 
 
 
 
-  <title>菜鸟冯的面试突击 - 01 | Feng-DD In Java</title>
+  <title>菜鸟冯的面试突击 - 03 | Feng-DD In Java</title>
   
 
 
@@ -350,7 +348,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Java面试/JavaInterviewMustKnow-03/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="冯大大">
@@ -367,7 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">菜鸟冯的面试突击 - 01</h1>
+          <h1 class="post-title" itemprop="name headline">菜鸟冯的面试突击 - 03</h1>
         
 
         <div class="post-meta">
@@ -379,8 +377,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T21:38:21+08:00">
-                2019-04-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-06T20:38:12+08:00">
+                2019-05-06
               </time>
             
 
@@ -395,8 +393,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-05T08:56:12+08:00">
-                2019-05-05
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-06T14:36:36+08:00">
+                2019-05-06
               </time>
             
           </span>
@@ -432,8 +430,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/Java面试/JavaInterviewMustKnow-01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Java面试/JavaInterviewMustKnow-01/" itemprop="commentCount"></span>
+                <a href="/Java面试/JavaInterviewMustKnow-03/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Java面试/JavaInterviewMustKnow-03/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -441,7 +439,7 @@
 
           
           
-             <span id="/Java面试/JavaInterviewMustKnow-01/" class="leancloud_visitors" data-flag-title="菜鸟冯的面试突击 - 01">
+             <span id="/Java面试/JavaInterviewMustKnow-03/" class="leancloud_visitors" data-flag-title="菜鸟冯的面试突击 - 03">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -475,189 +473,52 @@
       
         <p>本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】<a href="https://mp.weixin.qq.com/s/MO04IbnPQkJcm-nJZjYS-w" target="_blank" rel="noopener">微信原文</a></p>
 <p>(*):重点掌握</p>
-<h1 id="Java-基础-（一）"><a href="#Java-基础-（一）" class="headerlink" title="Java 基础 （一）"></a>Java 基础 （一）</h1><h2 id="一、数据类型"><a href="#一、数据类型" class="headerlink" title="一、数据类型"></a>一、数据类型</h2><blockquote>
-<p>基础数据类型 </p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">数据类型</th>
-<th style="text-align:center">字节数</th>
-<th style="text-align:center">包装类</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">Byte</td>
-</tr>
-<tr>
-<td style="text-align:center">short</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center">Short</td>
-</tr>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">32</td>
-<td style="text-align:center">Integer</td>
-</tr>
-<tr>
-<td style="text-align:center">long</td>
-<td style="text-align:center">64</td>
-<td style="text-align:center">Long</td>
-</tr>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">32</td>
-<td style="text-align:center">Float</td>
-</tr>
-<tr>
-<td style="text-align:center">double</td>
-<td style="text-align:center">64</td>
-<td style="text-align:center">Double</td>
-</tr>
-<tr>
-<td style="text-align:center">bolean</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">Bolean</td>
-</tr>
-<tr>
-<td style="text-align:center">char</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">Character</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>自动装箱和拆箱(基本数据类型与对应包装类之间的转换)</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer x = 2; //自动装箱</span><br><span class="line">int y = x; //自动拆箱</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>缓存池</p>
-</blockquote>
+<h1 id="Java-基础-（三）"><a href="#Java-基础-（三）" class="headerlink" title="Java 基础 （三）"></a>Java 基础 （三）</h1><h2 id="一、反射"><a href="#一、反射" class="headerlink" title="一、反射"></a>一、反射</h2><blockquote>
+<p>反射是什么？</p>
 <ul>
-<li>当创建对象时，先判断值是否存在于缓存池中。</li>
-<li>若存在，直接使用缓冲池中的对象(即返回缓存池的对象)。</li>
-<li>若不存在，创建新的对象。</li>
+<li>“正射”：使用的类是已经确定好的，直接对该类实例化使用。</li>
+<li>反射：在运行状态时，才确定要使用哪个类，此时无法使用 <code>new</code>关键字创建对象。通过动态获取对象信息和调用对象方法的功能。</li>
 </ul>
-<p>基本类型对应的缓冲池</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//「正射」</span><br><span class="line">Apple ap = new Apple(); //直接初始化</span><br><span class="line">apple.setPrice(4);</span><br><span class="line">//「反射」</span><br><span class="line">Class clz = Class.forName(&quot;com.xxx.Apple&quot;); //获取类的 Class 对象(类类型)</span><br><span class="line">Constructor constructor = clz.getConstructor(); //通过 Class 对象获取构造器对象</span><br><span class="line">Object apple = constructor.newInstance(); //通过构造器对象的方法获取 Apple 对象</span><br><span class="line">Method method = clz.getMethod(&quot;setPrice&quot;, int.class); //获取 setPrice() 方法对象</span><br><span class="line">method.invoke(apple, 14); //使用 invoke() 调用方法</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>反射获取 Class 对象</p>
+</blockquote>
+<p>反射就是获取类的字节码文件(.class),通过 Class 对象获取类的信息。</p>
+<p>获取 Class 对象有三种方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//1.任何一个类都有一个隐式的静态成员变量 class,适合在编译前就知道要操作的类</span><br><span class="line">Class f1 = Foo.class;</span><br><span class="line">//2.已知该类的对象,通过 Object.getClass()</span><br><span class="line">Class f2 = foo.getClass();</span><br><span class="line">//3.已知该类的类路径,通过 Class.forName(),可能抛出 ClassNotFoundException</span><br><span class="line">Class f3 = Class.forName(&quot;com.xxx.Foo&quot;);</span><br><span class="line">//都是 Foo 类的类类型</span><br><span class="line">System.out.println(f1==f2);//true</span><br><span class="line">System.out.println(f2==f3);//true</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>通过反射初始化类的对象</p>
+</blockquote>
+<p>获取类对象有俩种方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//1.通过 Class 对象的 newInstance() 方法，只能使用默认的无参构造</span><br><span class="line">Class clz = Class.forName(&quot;com.xxx.Apple&quot;); </span><br><span class="line">Apple apple = (Apple)clz.newInstance(); </span><br><span class="line"></span><br><span class="line">//2.通过 Class 对象获取构造器对象，通过构造器对象可以选择特定的构造方法初始化类对象</span><br><span class="line">Constructor constructor = clz.getConstructor();</span><br><span class="line">Apple apple = (Apple)constructor.newInstance();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>通过反射获取类的信息</p>
+</blockquote>
+<p>使用 java.lang.reflect 类库</p>
 <ul>
-<li>boolean: true &amp; false</li>
-<li>byte : all</li>
-<li>short &amp; int : -128 ~ 127</li>
-<li>char: \u0000 to \u007F<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Integer x = new Integer(120);</span><br><span class="line">Integer y = new Integer(120);</span><br><span class="line">System.out.println(x==y); // false</span><br><span class="line"></span><br><span class="line">Integer a = Integer.valueOf(120);</span><br><span class="line">Integer b = Integer.valueOf(120);</span><br><span class="line">System.out.println(a==b); // true</span><br><span class="line"></span><br><span class="line">Integer m = 120;</span><br><span class="line">Integer n = 120;</span><br><span class="line">System.out.println(m==n); // true</span><br></pre></td></tr></table></figure>
-</li>
+<li>Field 类：可以使用<code>get()</code>和<code>set()</code>方法读取和修改<code>Field</code>对象关联的字段</li>
+<li>Method 类：可以使用<code>invoke()</code>方法调用与<code>Method</code>对象关联的方法</li>
+<li>Constructor 类：可以用<code>Constructor</code>创建新的对象。</li>
 </ul>
-<p>造成这种情况的原因是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">getName();              // 获取名称，可以是类、方法、属性的名称，看调用的对象是哪个</span><br><span class="line">getSimpleName();        // 不包含包名的类名称 com.xxx.Foo</span><br><span class="line">getMethods();           // 获取类的 public 方法，包括从父类继承而来的</span><br><span class="line">getDeclaredMethods();   // 获取类的所有方法(包含私有的) public com.xxx.Foo getABC(java.lang.String,java.lang.Integer)</span><br><span class="line">getReturnType();        // 获取返回值类型 java.lang.String</span><br><span class="line">getParameterTypes();    // 获取参数列表类型 java.lang.String,java.lang.Integer</span><br><span class="line">getFields();            // 获取类的 public 属性 public java.lang.String name</span><br><span class="line">getDeclaredFields();    // 获取所有类的属性 </span><br><span class="line">getType();              // 获得类属性的数据类型 String</span><br><span class="line">getConstructor();       // 获得类的 public 构造</span><br><span class="line">getDeclaredConstructor();  // 获得类的所有构造</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>反射的优缺点</p>
+</blockquote>
+<p>反射的优点：</p>
 <ol>
-<li><code>new Integer(120);</code> 每次都会创建一个新对象。</li>
-<li><code>Integer.valueOf(120);</code> 会使用缓存池中的对象，多次调用的是同一个对象。</li>
-<li><code>Integer m = 120;</code>自动装箱时，编译器会调用<code>valueOf()</code>方法,因此，多次使用自动装箱创建，引用的是同一个对象。</li>
+<li>可扩展性:运行时动态加载。</li>
+<li>获得类目录:获取类的属性和方法(无法获得方法的实现)。</li>
+<li>调试或测试:利用反射调用类中的方法。</li>
 </ol>
-<h2 id="二、String"><a href="#二、String" class="headerlink" title="(*)二、String"></a>(*)二、String</h2><blockquote>
-<p>String被声明为final，因此不能被继承</p>
-</blockquote>
-<p>Java 8 中，String底层利用 char[] 存储数据。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public final class String</span><br><span class="line">    implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence &#123;</span><br><span class="line">    private final char value[];</span><br><span class="line">    private int hash; // Default to 0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>Java 9 中，String底层利用 byte[] 存储数据,coder 识别编码。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public final class String</span><br><span class="line">    implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence &#123;</span><br><span class="line">    private final byte[] value;</span><br><span class="line">    private final byte coder;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>value 数组被 final 修饰，因此在初始化之后，value 不能再引用其他数组。<br>String 内部也没有改变 value 数组的方法，保证了 String 的不可变性。</p>
-<blockquote>
-<p>String 设计成不可变的原因</p>
-</blockquote>
+<p>反射的缺点：</p>
 <ol>
-<li>缓存 hash 值</li>
-</ol>
-<p>String 的不可变性保证了 hashcode 的唯一，利用 String 中的 hash 属性对 String 对象的 hashcode 缓存，<br>避免了重新计算 hashcode。也是 Java 中 HashMa p等容器将 String 类型作为键的原因。</p>
-<ol start="2">
-<li>常量池</li>
-</ol>
-<p>如果一个 String 对象已经创建过，就会指向 String Pool 中已创建的对象。String 的不可变性，<br>保证了 String 对象可以入池。</p>
-<ol start="3">
-<li>线程安全(同步)</li>
-</ol>
-<p>String 的不可变性保证了多线程可以同时操作同一个 String 对象，不用考虑线程安全问题使用同步。</p>
-<ol start="4">
-<li>安全性</li>
-</ol>
-<p>数据库的用户名和密码是以字符串的形式传输来获取数据库连接；<br>socket 编程中，主机名和端口以字符串形式传输；String 的不可变性，防止外部恶意篡改数据，保证了安全性。</p>
-<blockquote>
-<p>String、StringBuffer、StringBuilder</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">对象可变性</th>
-<th style="text-align:center">线程安全性</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">String</td>
-<td style="text-align:center">不可变</td>
-<td style="text-align:center">安全</td>
-</tr>
-<tr>
-<td style="text-align:center">StringBuffer</td>
-<td style="text-align:center">可变</td>
-<td style="text-align:center">安全(Synchronized)</td>
-</tr>
-<tr>
-<td style="text-align:center">StringBuilder</td>
-<td style="text-align:center">可变</td>
-<td style="text-align:center">不安全</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>字符串常量池(String Pool)</p>
-</blockquote>
-<p>字符串常量池保存着所有字符串的字面量，字面量在编译器就已经确定。</p>
-<h5 id="String-的-intern-方法"><a href="#String-的-intern-方法" class="headerlink" title="String 的 intern() 方法"></a>String 的 intern() 方法</h5><p>当字符串调用 intern() 方法时，若常量池中存在与该字符串值相同(使用 equals() 方法判断)的字符串，<br>返回该字符串的引用；否则在常量池中添加这个新的字符串，并返回该字符串引用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String s1 = new String(&quot;aa&quot;);</span><br><span class="line">String s2 = new String(&quot;aa&quot;);</span><br><span class="line"></span><br><span class="line">System.out.println(s1==s2); //false</span><br><span class="line">String s3 = s1.intern(&quot;aa&quot;);</span><br><span class="line">String s4 = s1.intern(&quot;aa&quot;);</span><br><span class="line">System.out.println(s3==s4); //true</span><br><span class="line"></span><br><span class="line">String s5 = &quot;bb&quot;;</span><br><span class="line">String s6 = &quot;bb&quot;;</span><br><span class="line">System.out.println(s5==s6); //true,这种创建字符串，会自动地将字符串放入 String Pool 中</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>Java 7 之前，String Pool 放在运行时常量池中，属于永久代。</li>
-<li>Java 7 中，String Pool 放在堆内存中。因为永久代空间有限，大量使用字符串，会造成 OutOfMemoryError 错误。</li>
-</ul>
-<p>String 构造函数之一:将一个字符串作为另一个字符串的构造参数时，俩个字符串指向同一个 value 数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public String(String original) &#123;</span><br><span class="line">    this.value = original.value;</span><br><span class="line">    this.hash = original.hash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="三、参数传递"><a href="#三、参数传递" class="headerlink" title="三、参数传递"></a>三、参数传递</h2><p>在 Java 中的，所有参数都是以值传递的方式传入方法中。</p>
-<blockquote>
-<p>参数是基本数据类型时，传递的是参数值的拷贝</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class A&#123;</span><br><span class="line">    private int num;</span><br><span class="line">    public void test(int i) &#123;</span><br><span class="line">        System.out.print(&quot;传入的参数值为：&quot;+i);</span><br><span class="line">        i *= 5;</span><br><span class="line">        System.out.print(&quot;修改后的形参i的值为：&quot;+i);</span><br><span class="line">        System.out.print(&quot;实参num的值：&quot;+this.num);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        A a = new A();</span><br><span class="line">        a.num = 100;</span><br><span class="line">        a.test(num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出结果是：<br>    100<br>    500<br>    100</p>
-<p>原理：传入test()方法的，是 num 属性值的拷贝，对形参的改变并不会使实参有变化。</p>
-<blockquote>
-<p>参数是引用数据类型时，传递的是引用对象的内存空间地址；当方法内改变该对象的属性值时，就是永久改变。</p>
-</blockquote>
-<blockquote>
-<p>参数是 String 类型时，传递的是内存空间地址；当方法内对字符串改变时，由于 String 类型的不可变性，<br>会创建一个新的 String 对象，而方法外的 String 引用的不是新的对象，所以方法外 String 值没变。 </p>
-</blockquote>
-<h2 id="四、类型转换"><a href="#四、类型转换" class="headerlink" title="四、类型转换"></a>四、类型转换</h2><blockquote>
-<p>基本数据类型之间的转换</p>
-</blockquote>
-<p><img src="/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png" alt="类型转换"></p>
-<ol>
-<li>布尔型不可以转换</li>
-<li>byte 与 char 不可以互相转换(取值范围决定)</li>
-<li>short 与 char 不可以互相转换(取值范围决定)</li>
-<li>byte 可以自动提升到 short(取值范围决定)</li>
-</ol>
-<blockquote>
-<p>强制类型转换</p>
-</blockquote>
-<ol>
-<li><p>取值必须在转换类型的范围内,否则会发生数据错误</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a = 233;</span><br><span class="line">byte b = (byte) a;</span><br><span class="line">System.out.print(b); //-23</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>double 转 float 可能出现精度丢失</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double c = 23.33;</span><br><span class="line">float d = (float) c;</span><br><span class="line">System.out.print(d); //23.3f</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p>进行运算时，数据类型会自动提升至运算符俩侧的较大类型，依次类推；运算完毕后，赋值符号左侧的类型较小时，需要强转。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">byte a = 3 + 5; // a=8</span><br><span class="line">int b = 3,c = 5;</span><br><span class="line">byte d = b + c; //编译错误</span><br><span class="line">byte d = (byte) b + c; // d=8</span><br></pre></td></tr></table></figure>
+<li>性能开销:反射涉及了动态类型的解析，所以 JVM 无法对这些代码进行优化。</li>
+<li>安全限制:使用反射技术要求程序必须在一个没有安全限制的环境中运行。</li>
+<li>内部暴露:由于反射允许代码执行一些在正常情况下不被允许的操作（比如访问私有的属性和方法），所以使用反射可能导致代码功能失调并破坏可移植性。<font>
 
+</font></li>
+</ol>
+<h2 id="二、异常"><a href="#二、异常" class="headerlink" title="二、异常"></a>二、异常</h2>
       
     </div>
     
@@ -696,8 +557,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/日常积累/daily-accumulation-01-0/" rel="next" title="菜鸟冯日常踩坑 - 01">
-                <i class="fa fa-chevron-left"></i> 菜鸟冯日常踩坑 - 01
+              <a href="/Java面试/JavaInterviewMustKnow-02/" rel="next" title="菜鸟冯的面试突击 - 02">
+                <i class="fa fa-chevron-left"></i> 菜鸟冯的面试突击 - 02
               </a>
             
           </div>
@@ -706,8 +567,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Java面试/JavaInterviewMustKnow-02/" rel="prev" title="菜鸟冯的面试突击 - 02">
-                菜鸟冯的面试突击 - 02 <i class="fa fa-chevron-right"></i>
+              <a href="/日常积累/Lombok/" rel="prev" title="菜鸟冯的技术Shopping Cart - Lombok">
+                菜鸟冯的技术Shopping Cart - Lombok <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -913,7 +774,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础-（一）"><span class="nav-number">1.</span> <span class="nav-text">Java 基础 （一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、String"><span class="nav-number">1.2.</span> <span class="nav-text">(*)二、String</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#String-的-intern-方法"><span class="nav-number">1.2.0.0.1.</span> <span class="nav-text">String 的 intern() 方法</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#三、参数传递"><span class="nav-number">1.3.</span> <span class="nav-text">三、参数传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、类型转换"><span class="nav-number">1.4.</span> <span class="nav-text">四、类型转换</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础-（三）"><span class="nav-number">1.</span> <span class="nav-text">Java 基础 （三）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、反射"><span class="nav-number">1.1.</span> <span class="nav-text">一、反射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、异常"><span class="nav-number">1.2.</span> <span class="nav-text">二、异常</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1150,9 +1011,9 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/Java面试/JavaInterviewMustKnow-01/';
-          this.page.identifier = 'Java面试/JavaInterviewMustKnow-01/';
-          this.page.title = '菜鸟冯的面试突击 - 01';
+          this.page.url = 'http://yoursite.com/Java面试/JavaInterviewMustKnow-03/';
+          this.page.identifier = 'Java面试/JavaInterviewMustKnow-03/';
+          this.page.title = '菜鸟冯的面试突击 - 03';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
