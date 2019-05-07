@@ -123,7 +123,7 @@
 <meta property="og:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （三）一、反射 反射是什么？  “正射”：使用的类是已经确定好的，直接对该类实例化使用。 反射：在运行状态时，才确定要使用哪个类，此时无法使用 new关键字创建对象。通过动态获取对象信息和调用对象方法的功能。   123456789//「正射」Apple ap = new Apple(); /">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-03/Throwable.jpg">
-<meta property="og:updated_time" content="2019-05-06T15:08:24.627Z">
+<meta property="og:updated_time" content="2019-05-07T06:50:55.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="菜鸟冯的面试突击 - 03">
 <meta name="twitter:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （三）一、反射 反射是什么？  “正射”：使用的类是已经确定好的，直接对该类实例化使用。 反射：在运行状态时，才确定要使用哪个类，此时无法使用 new关键字创建对象。通过动态获取对象信息和调用对象方法的功能。   123456789//「正射」Apple ap = new Apple(); /">
@@ -395,8 +395,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-06T23:08:24+08:00">
-                2019-05-06
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-07T14:50:55+08:00">
+                2019-05-07
               </time>
             
           </span>
@@ -548,7 +548,6 @@
 </blockquote>
 <h2 id="三、泛型"><a href="#三、泛型" class="headerlink" title="三、泛型"></a>三、泛型</h2><p>Java 5 引入的新特性，允许编译时类型安全的检测。</p>
 <p>常用于容器、集合对其内部元素的约束</p>
-<h2 id="四、注解"><a href="#四、注解" class="headerlink" title="四、注解"></a>四、注解</h2><p>Annatation(注解)是一个接口，程序可以通过反射来获取指定程序中元素的 Annotation 对象，<br>然后通过该 Annotation 对象来获取注解中的元数据信息。</p>
 <blockquote>
 <p>泛型方法</p>
 <blockquote>
@@ -563,7 +562,100 @@
 <p>使用泛型的时候加上的类型参数，会被编译器在编译的时候去掉。这个 过程就称为类型擦除。</p>
 </blockquote>
 </blockquote>
-<h2 id="五、Java-8-新特性"><a href="#五、Java-8-新特性" class="headerlink" title="五、Java 8 新特性"></a>五、Java 8 新特性</h2>
+<h2 id="四、注解"><a href="#四、注解" class="headerlink" title="四、注解"></a>四、注解</h2><p>注解是一种特殊的注释，需要解析；所有的注解类都继承 Annatation 接口。</p>
+<p>注解的本质：Annatation 接口的子接口。</p>
+<p>如：JDK 内置注解 </p>
+<ol>
+<li>@Override：作用于方法之上,编译结束后将被丢弃，必须继承父类的非私有方法。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@Target(ElementType.METHOD)</span><br><span class="line">@Retention(RetentionPolicy.SOURCE)</span><br><span class="line">public @interface Override &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>反编译后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface Override extends Annatation&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li>@Deprecated：作用目标任意，永久存在，标记当前的类或方法已过时。</li>
+<li>@SuppressWarnings：作用目标任意，编译结束后将被丢弃，消除 java 警告。</li>
+</ol>
+<p>解析类或方法的注解方式有俩种</p>
+<blockquote>
+<p>编译期直接扫描：编译器在代码编译字节码的过程中会检测到某个类或者方法被一些注解修饰，这时它就会对注解进行某些处理。</p>
+<ul>
+<li>对于 JDK 内置的注解，编译器会按照注解对类或方法进行处理。</li>
+<li>对于自定义注解，编译器不知如何对类或方法进行处理，只会根据该注解的作用范围选择是否编译进字节码文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public @interface CustomAnnotation&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>运行期反射：永久存活的注解，可以通过反射获取注解</p>
+<ul>
+<li>getAnnotation：返回指定的注解</li>
+<li>getAnnotations：返回所有的注解</li>
+<li>getDeclaredAnnotation：返回本元素的指定注解</li>
+<li>getDeclaredAnnotations：返回本元素的所有注解，不包含父类继承而来的</li>
+<li>isAnnotationPresent：判定当前元素是否被指定注解修饰</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>元注解：用于修饰注解的注解</p>
+<ol>
+<li>@Target：注解的作用目标,有一个 value 属性 <code>@Target(value = ElementType.FIELD)</code><ol>
+<li>ElementType.TYPE：允许被修饰的注解作用在类、接口和枚举上</li>
+<li>ElementType.FIELD：允许作用在属性字段上</li>
+<li>ElementType.METHOD：允许作用在方法上</li>
+<li>ElementType.PARAMETER：允许作用在方法参数上</li>
+<li>ElementType.CONSTRUCTOR：允许作用在构造器上</li>
+<li>ElementType.LOCAL_VARIABLE：允许作用在本地局部变量上</li>
+<li>ElementType.ANNOTATION_TYPE：允许作用在注解上</li>
+<li>ElementType.PACKAGE：允许作用在包上</li>
+</ol>
+</li>
+<li>@Retention：注解的生命周期,有一个 value 属性 <code>@Retention(value = RetentionPolicy.RUNTIME)</code><ol>
+<li>RetentionPolicy.SOURCE：当前注解编译期可见，不会写入 class 文件</li>
+<li>RetentionPolicy.CLASS：类加载阶段丢弃(不能进入方法区)，会写入 class 文件</li>
+<li>RetentionPolicy.RUNTIME：永久保存，可以反射获取</li>
+</ol>
+</li>
+<li>@Documented：注解是否应当被包含在 JavaDoc 文档中</li>
+<li>@Inherited：是否允许子类继承该注解</li>
+</ol>
+</blockquote>
+<h2 id="五、Java-8-新特性"><a href="#五、Java-8-新特性" class="headerlink" title="五、Java 8 新特性"></a>五、Java 8 新特性</h2><blockquote>
+<p>1.函数式接口：只有一个抽象方法的接口，这个抽象方法定义了这个接口的目标及用途,可选择是否使用 @FunctionalInterface 注解标识函数式接口。<br>当时用该注解时，该函数式接口不能定义（非静态和非默认）方法，可以定义 Object 类的所有方法，静态方法和默认方法。</p>
+</blockquote>
+<blockquote>
+<p>2.Lambda 表达式：允许把函数作为一个方法的参数（函数作为参数传递进方法中），<br>Lambda表达式最终返回的是函数式接口的一个对象实例，因此需要依赖于函数式接口。<br>相当于替换了匿名类使用。 </p>
+<blockquote>
+<p>Lambda的四个特性：</p>
+<ol>
+<li>可选类型声明：传入的参数可以不用声明类型，编译器可以自动识别参数类型。</li>
+<li>可选的参数圆括号：只有一个传入参数时可以省略圆括号(必须同时省略参数类型)，多个参数时必须使用圆括号。</li>
+<li>可选的大括号：如果主体只有一个语句，可以不需要使用大括号。</li>
+<li>可选的返回关键字”return”：如果需要返回值主体只有一个表达式则可以同时省略大括号和”return”关键字，编译器会自动将结果作为返回值，如果使用了大括号则返回值不能省略”return”关键字。</li>
+</ol>
+</blockquote>
+</blockquote>
+<p>Java 7<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//「遍历」</span><br><span class="line">for(String str : list)&#123;</span><br><span class="line">    System.out.println(str);</span><br><span class="line">&#125;</span><br><span class="line">//「排序」</span><br><span class="line">Collections.sort(list, new Comparator&lt;String&gt;() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public int compare(String o1, String o2) &#123;</span><br><span class="line">        return o1.compareTo(o2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>Java 8 使用 Lambda 表达式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//「遍历」</span><br><span class="line">list.forEach(str-&gt; System.out.println(str));</span><br><span class="line">//「排序」</span><br><span class="line">Collections.sort(list,(o1,o2)-&gt;&#123;return o1.compareTo(o2);&#125;);</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>3.Stream：Java 8 中的 Stream 是对集合（Collection）对象功能的增强，java.util.stream.Stream</p>
+<blockquote>
+<p>将要处理的元素集合看作一种流， 流在管道中传输， 并且可以在管道的节点上进行处理， 比如筛选， 排序，聚合等。元素流在管道中经过中间操作（intermediate operation）的处理，最后由最终操作(terminal operation)得到前面处理的结果。</p>
+</blockquote>
+</blockquote>
+<p>集合有两种方式生成流： </p>
+<ul>
+<li>stream() − 为集合创建串行流。 </li>
+<li>parallelStream() − 为集合创建并行流。</li>
+</ul>
+<p>并发模式（parallelStream）能够充分利用多核处理器的优势，使用 fork/join 并行方式来拆分任务和加速处理过程 </p>
+<blockquote>
+<p>4.默认方法：接口可以定义默认方法(default)，对接口进行了扩展，无需因接口添加新方法，导致所有实现类都需进行改动。</p>
+</blockquote>
+<blockquote>
+<p>5.Optional：使用Optional来包装方法的返回值，这就表示方法的返回值可能为null，<br>需要使用Optional提供的方法来检查，如果为null，还可以提供一个默认值</p>
+</blockquote>
+<blockquote>
+<p>6.新的时间和日期API:新的时间和日期API都是不可变的，并且是线程安全的。<br>LocalDateTime, LocalDate, LocalTime, Duration, Period, Instant, DateTimeFormatter等等API。</p>
+</blockquote>
+
       
     </div>
     
@@ -907,7 +999,7 @@ var jiathis_config={
 
 <div class="theme-info">
 <div class="powered-by"></div>
-<span class="post-count">博客全站共8.5k字</span>
+<span class="post-count">博客全站共9.8k字</span>
 </div>
 
         
