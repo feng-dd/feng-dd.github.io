@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="面试,Java,">
+  <meta name="keywords" content="Java,JVM,">
 
 
 
@@ -114,20 +114,23 @@
 
 
 
-<meta name="description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （一）一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1">
-<meta name="keywords" content="面试,Java">
+<meta name="description" content="JVM对于 Java 程序员来说，在虚拟机自动内存管理机制下，不容易出现内存泄漏和内存溢出问题。正是因为 Java 程序员把内存控制权利交给 Java 虚拟机，一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那么排查错误将会是一个非常艰巨的任务。所以对 Java 虚拟机的了解是必须的。 Java 运行时数据区(Java内存区域)Java 虚拟机在运行 Java 程序时，会将它管">
+<meta name="keywords" content="Java,JVM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="菜鸟冯的面试突击 - 01">
-<meta property="og:url" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/index.html">
+<meta property="og:title" content="菜鸟冯带你走入 JVM - 01">
+<meta property="og:url" content="http://yoursite.com/JVM-虚拟机/JVM-01/index.html">
 <meta property="og:site_name" content="Feng-DD In Java">
-<meta property="og:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （一）一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1">
+<meta property="og:description" content="JVM对于 Java 程序员来说，在虚拟机自动内存管理机制下，不容易出现内存泄漏和内存溢出问题。正是因为 Java 程序员把内存控制权利交给 Java 虚拟机，一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那么排查错误将会是一个非常艰巨的任务。所以对 Java 虚拟机的了解是必须的。 Java 运行时数据区(Java内存区域)Java 虚拟机在运行 Java 程序时，会将它管">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png">
-<meta property="og:updated_time" content="2019-05-05T00:56:12.322Z">
+<meta property="og:image" content="http://yoursite.com/JVM-虚拟机/JVM-01/JVM-1.7.png">
+<meta property="og:image" content="http://yoursite.com/JVM-虚拟机/JVM-01/JVM-1.8.png">
+<meta property="og:image" content="http://yoursite.com/JVM-虚拟机/JVM-01/类加载.png">
+<meta property="og:image" content="http://yoursite.com/JVM-虚拟机/JVM-01/对象创建2.png">
+<meta property="og:updated_time" content="2019-05-08T07:52:39.532Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="菜鸟冯的面试突击 - 01">
-<meta name="twitter:description" content="本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】微信原文 (*):重点掌握 Java 基础 （一）一、数据类型 基础数据类型      数据类型 字节数 包装类     byte 8 Byte   short 16 Short   int 32 Integer   long 64 Long   float 32 Float   double 64 Double   bolean 1">
-<meta name="twitter:image" content="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png">
+<meta name="twitter:title" content="菜鸟冯带你走入 JVM - 01">
+<meta name="twitter:description" content="JVM对于 Java 程序员来说，在虚拟机自动内存管理机制下，不容易出现内存泄漏和内存溢出问题。正是因为 Java 程序员把内存控制权利交给 Java 虚拟机，一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那么排查错误将会是一个非常艰巨的任务。所以对 Java 虚拟机的了解是必须的。 Java 运行时数据区(Java内存区域)Java 虚拟机在运行 Java 程序时，会将它管">
+<meta name="twitter:image" content="http://yoursite.com/JVM-虚拟机/JVM-01/JVM-1.7.png">
 
 
 
@@ -157,13 +160,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/">
+  <link rel="canonical" href="http://yoursite.com/JVM-虚拟机/JVM-01/">
 
 
 
 
 
-  <title>菜鸟冯的面试突击 - 01 | Feng-DD In Java</title>
+  <title>菜鸟冯带你走入 JVM - 01 | Feng-DD In Java</title>
   
 
 
@@ -350,7 +353,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Java面试/JavaInterviewMustKnow-01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/JVM-虚拟机/JVM-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="冯大大">
@@ -367,7 +370,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">菜鸟冯的面试突击 - 01</h1>
+          <h1 class="post-title" itemprop="name headline">菜鸟冯带你走入 JVM - 01</h1>
         
 
         <div class="post-meta">
@@ -379,8 +382,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T21:38:21+08:00">
-                2019-04-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-08T09:14:01+08:00">
+                2019-05-08
               </time>
             
 
@@ -395,8 +398,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-05T08:56:12+08:00">
-                2019-05-05
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-08T15:52:39+08:00">
+                2019-05-08
               </time>
             
           </span>
@@ -414,8 +417,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java面试/" itemprop="url" rel="index">
-                    <span itemprop="name">Java面试</span>
+                  <a href="/categories/JVM-虚拟机/" itemprop="url" rel="index">
+                    <span itemprop="name">JVM 虚拟机</span>
                   </a>
                 </span>
 
@@ -432,8 +435,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/Java面试/JavaInterviewMustKnow-01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Java面试/JavaInterviewMustKnow-01/" itemprop="commentCount"></span>
+                <a href="/JVM-虚拟机/JVM-01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="JVM-虚拟机/JVM-01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -441,7 +444,7 @@
 
           
           
-             <span id="/Java面试/JavaInterviewMustKnow-01/" class="leancloud_visitors" data-flag-title="菜鸟冯的面试突击 - 01">
+             <span id="/JVM-虚拟机/JVM-01/" class="leancloud_visitors" data-flag-title="菜鸟冯带你走入 JVM - 01">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -473,191 +476,139 @@
       
 
       
-        <p>本文参照公众号:程序员乔戈里发布的文章【BATJ面试必会系列】<a href="https://mp.weixin.qq.com/s/MO04IbnPQkJcm-nJZjYS-w" target="_blank" rel="noopener">微信原文</a></p>
-<p>(*):重点掌握</p>
-<h1 id="Java-基础-（一）"><a href="#Java-基础-（一）" class="headerlink" title="Java 基础 （一）"></a>Java 基础 （一）</h1><h2 id="一、数据类型"><a href="#一、数据类型" class="headerlink" title="一、数据类型"></a>一、数据类型</h2><blockquote>
-<p>基础数据类型 </p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">数据类型</th>
-<th style="text-align:center">字节数</th>
-<th style="text-align:center">包装类</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">Byte</td>
-</tr>
-<tr>
-<td style="text-align:center">short</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center">Short</td>
-</tr>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">32</td>
-<td style="text-align:center">Integer</td>
-</tr>
-<tr>
-<td style="text-align:center">long</td>
-<td style="text-align:center">64</td>
-<td style="text-align:center">Long</td>
-</tr>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">32</td>
-<td style="text-align:center">Float</td>
-</tr>
-<tr>
-<td style="text-align:center">double</td>
-<td style="text-align:center">64</td>
-<td style="text-align:center">Double</td>
-</tr>
-<tr>
-<td style="text-align:center">bolean</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">Bolean</td>
-</tr>
-<tr>
-<td style="text-align:center">char</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">Character</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>自动装箱和拆箱(基本数据类型与对应包装类之间的转换)</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer x = 2; //自动装箱</span><br><span class="line">int y = x; //自动拆箱</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>缓存池</p>
-</blockquote>
-<ul>
-<li>当创建对象时，先判断值是否存在于缓存池中。</li>
-<li>若存在，直接使用缓冲池中的对象(即返回缓存池的对象)。</li>
-<li>若不存在，创建新的对象。</li>
-</ul>
-<p>基本类型对应的缓冲池</p>
-<ul>
-<li>boolean: true &amp; false</li>
-<li>byte : all</li>
-<li>short &amp; int : -128 ~ 127</li>
-<li>char: \u0000 to \u007F<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Integer x = new Integer(120);</span><br><span class="line">Integer y = new Integer(120);</span><br><span class="line">System.out.println(x==y); // false</span><br><span class="line"></span><br><span class="line">Integer a = Integer.valueOf(120);</span><br><span class="line">Integer b = Integer.valueOf(120);</span><br><span class="line">System.out.println(a==b); // true</span><br><span class="line"></span><br><span class="line">Integer m = 120;</span><br><span class="line">Integer n = 120;</span><br><span class="line">System.out.println(m==n); // true</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>造成这种情况的原因是：</p>
-<ol>
-<li><code>new Integer(120);</code> 每次都会创建一个新对象。</li>
-<li><code>Integer.valueOf(120);</code> 会使用缓存池中的对象，多次调用的是同一个对象。</li>
-<li><code>Integer m = 120;</code>自动装箱时，编译器会调用<code>valueOf()</code>方法,因此，多次使用自动装箱创建，引用的是同一个对象。</li>
-</ol>
-<h2 id="二、String"><a href="#二、String" class="headerlink" title="(*)二、String"></a>(*)二、String</h2><blockquote>
-<p>String被声明为final，因此不能被继承</p>
-</blockquote>
-<p>Java 8 中，String底层利用 char[] 存储数据。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public final class String</span><br><span class="line">    implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence &#123;</span><br><span class="line">    private final char value[];</span><br><span class="line">    private int hash; // Default to 0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>Java 9 中，String底层利用 byte[] 存储数据,coder 识别编码。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public final class String</span><br><span class="line">    implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence &#123;</span><br><span class="line">    private final byte[] value;</span><br><span class="line">    private final byte coder;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>value 数组被 final 修饰，因此在初始化之后，value 不能再引用其他数组。<br>String 内部也没有改变 value 数组的方法，保证了 String 的不可变性。</p>
-<blockquote>
-<p>String 设计成不可变的原因</p>
-</blockquote>
-<ol>
-<li>缓存 hash 值</li>
-</ol>
-<p>String 的不可变性保证了 hashcode 的唯一，利用 String 中的 hash 属性对 String 对象的 hashcode 缓存，<br>避免了重新计算 hashcode。也是 Java 中 HashMa p等容器将 String 类型作为键的原因。</p>
-<ol start="2">
-<li>常量池</li>
-</ol>
-<p>如果一个 String 对象已经创建过，就会指向 String Pool 中已创建的对象。String 的不可变性，<br>保证了 String 对象可以入池。</p>
-<ol start="3">
-<li>线程安全(同步)</li>
-</ol>
-<p>String 的不可变性保证了多线程可以同时操作同一个 String 对象，不用考虑线程安全问题使用同步。</p>
-<ol start="4">
-<li>安全性</li>
-</ol>
-<p>数据库的用户名和密码是以字符串的形式传输来获取数据库连接；<br>socket 编程中，主机名和端口以字符串形式传输；String 的不可变性，防止外部恶意篡改数据，保证了安全性。</p>
-<blockquote>
-<p>String、StringBuffer、StringBuilder</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">对象可变性</th>
-<th style="text-align:center">线程安全性</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">String</td>
-<td style="text-align:center">不可变</td>
-<td style="text-align:center">安全</td>
-</tr>
-<tr>
-<td style="text-align:center">StringBuffer</td>
-<td style="text-align:center">可变</td>
-<td style="text-align:center">安全(Synchronized)</td>
-</tr>
-<tr>
-<td style="text-align:center">StringBuilder</td>
-<td style="text-align:center">可变</td>
-<td style="text-align:center">不安全</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>字符串常量池(String Pool)</p>
-</blockquote>
-<p>字符串常量池保存着所有字符串的字面量，字面量在编译器就已经确定。</p>
-<h5 id="String-的-intern-方法"><a href="#String-的-intern-方法" class="headerlink" title="String 的 intern() 方法"></a>String 的 intern() 方法</h5><p>当字符串调用 intern() 方法时，若常量池中存在与该字符串值相同(使用 equals() 方法判断)的字符串，<br>返回该字符串的引用；否则在常量池中添加这个新的字符串，并返回该字符串引用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String s1 = new String(&quot;aa&quot;);</span><br><span class="line">String s2 = new String(&quot;aa&quot;);</span><br><span class="line"></span><br><span class="line">System.out.println(s1==s2); //false</span><br><span class="line">String s3 = s1.intern(&quot;aa&quot;);</span><br><span class="line">String s4 = s1.intern(&quot;aa&quot;);</span><br><span class="line">System.out.println(s3==s4); //true</span><br><span class="line"></span><br><span class="line">String s5 = &quot;bb&quot;;</span><br><span class="line">String s6 = &quot;bb&quot;;</span><br><span class="line">System.out.println(s5==s6); //true,这种创建字符串，会自动地将字符串放入 String Pool 中</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>Java 7 之前，String Pool 放在运行时常量池中，属于永久代。</li>
-<li>Java 7 中，String Pool 放在堆内存中。因为永久代空间有限，大量使用字符串，会造成 OutOfMemoryError 错误。</li>
-</ul>
-<p>String 构造函数之一:将一个字符串作为另一个字符串的构造参数时，俩个字符串指向同一个 value 数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public String(String original) &#123;</span><br><span class="line">    this.value = original.value;</span><br><span class="line">    this.hash = original.hash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="三、参数传递"><a href="#三、参数传递" class="headerlink" title="三、参数传递"></a>三、参数传递</h2><p>在 Java 中的，所有参数都是以值传递的方式传入方法中。</p>
-<blockquote>
-<p>参数是基本数据类型时，传递的是参数值的拷贝</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class A&#123;</span><br><span class="line">    private int num;</span><br><span class="line">    public void test(int i) &#123;</span><br><span class="line">        System.out.print(&quot;传入的参数值为：&quot;+i);</span><br><span class="line">        i *= 5;</span><br><span class="line">        System.out.print(&quot;修改后的形参i的值为：&quot;+i);</span><br><span class="line">        System.out.print(&quot;实参num的值：&quot;+this.num);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        A a = new A();</span><br><span class="line">        a.num = 100;</span><br><span class="line">        a.test(num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出结果是：<br>    100<br>    500<br>    100</p>
-<p>原理：传入test()方法的，是 num 属性值的拷贝，对形参的改变并不会使实参有变化。</p>
-<blockquote>
-<p>参数是引用数据类型时，传递的是引用对象的内存空间地址；当方法内改变该对象的属性值时，就是永久改变。</p>
+        <h1 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h1><p>对于 Java 程序员来说，在虚拟机自动内存管理机制下，不容易出现内存泄漏和内存溢出问题。<br>正是因为 Java 程序员把内存控制权利交给 Java 虚拟机，一旦出现内存泄漏和溢出方面的问题，<br>如果不了解虚拟机是怎样使用内存的，那么排查错误将会是一个非常艰巨的任务。所以对 Java 虚拟机的了解是必须的。</p>
+<h2 id="Java-运行时数据区-Java内存区域"><a href="#Java-运行时数据区-Java内存区域" class="headerlink" title="Java 运行时数据区(Java内存区域)"></a>Java 运行时数据区(Java内存区域)</h2><p>Java 虚拟机在运行 Java 程序时，会将它管理的区域划分为若干个不同的内存区域。<br>JDK 1.8 与之前版本略有区别。</p>
+<p><img src="/JVM-虚拟机/JVM-01/JVM-1.7.png" alt="JVM 1.7"><br><img src="/JVM-虚拟机/JVM-01/JVM-1.8.png" alt="JVM 1.8"></p>
+<h3 id="1-程序计数器"><a href="#1-程序计数器" class="headerlink" title="1.程序计数器"></a>1.程序计数器</h3><blockquote>
+<p>程序计数器，线程私有的，可看做当前线程执行的字节码的行号指示器，字节码解释器通过改变计数器的值来选取下一条执行的字节码指令，<br>分支，循环，跳转，异常处理，线程恢复等都依赖于它。</p>
 </blockquote>
 <blockquote>
-<p>参数是 String 类型时，传递的是内存空间地址；当方法内对字符串改变时，由于 String 类型的不可变性，<br>会创建一个新的 String 对象，而方法外的 String 引用的不是新的对象，所以方法外 String 值没变。 </p>
+<p>为了在线程切换时，能恢复正确的执行顺序，每个线程都有一个独立的程序计数器，保证各线程之间互不影响，所以它是线程私有的内存区域。</p>
 </blockquote>
-<h2 id="四、类型转换"><a href="#四、类型转换" class="headerlink" title="四、类型转换"></a>四、类型转换</h2><blockquote>
-<p>基本数据类型之间的转换</p>
-</blockquote>
-<p><img src="/Java面试/JavaInterviewMustKnow-01/数据类型之间的转换.png" alt="类型转换"></p>
-<ol>
-<li>布尔型不可以转换</li>
-<li>byte 与 char 不可以互相转换(取值范围决定)</li>
-<li>short 与 char 不可以互相转换(取值范围决定)</li>
-<li>byte 可以自动提升到 short(取值范围决定)</li>
-</ol>
 <blockquote>
-<p>强制类型转换</p>
+<p>线程计数器的作用有：1.字节码解释器通过它实现代码的流程控制。<br>                    2.多线程在切换时，保证当前线程切换回来后，正确执行。</p>
 </blockquote>
-<ol>
-<li><p>取值必须在转换类型的范围内,否则会发生数据错误</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a = 233;</span><br><span class="line">byte b = (byte) a;</span><br><span class="line">System.out.print(b); //-23</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>double 转 float 可能出现精度丢失</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double c = 23.33;</span><br><span class="line">float d = (float) c;</span><br><span class="line">System.out.print(d); //23.3f</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
 <blockquote>
-<p>进行运算时，数据类型会自动提升至运算符俩侧的较大类型，依次类推；运算完毕后，赋值符号左侧的类型较小时，需要强转。</p>
+<p>内存区域中，唯一不会出现 OutOfMemoryError；生命周期与线程相同。</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">byte a = 3 + 5; // a=8</span><br><span class="line">int b = 3,c = 5;</span><br><span class="line">byte d = b + c; //编译错误</span><br><span class="line">byte d = (byte) b + c; // d=8</span><br></pre></td></tr></table></figure>
+<h3 id="2-虚拟机栈"><a href="#2-虚拟机栈" class="headerlink" title="2.虚拟机栈"></a>2.虚拟机栈</h3><blockquote>
+<p>虚拟机栈，线程私有的，是 Java 方法执行的内存模型，栈是一个后进先出的数据结构，由一个个栈帧组成，方法的执行过程就是一个栈帧入栈到出栈的过程。</p>
+</blockquote>
+<blockquote>
+<p>栈帧存储了局部变量表，操作数栈，动态链接，方法出口信息；每一个方法的调用对应一个栈帧被压入栈中，每一个方法调用结束，对应的栈帧被弹出栈并释放内存空间。<br>Java方法的两种返回方式：return、抛出异常；无论哪种方式，都会使一个栈帧被弹出。</p>
+</blockquote>
+<blockquote>
+<p>局部变量表主要存放基本数据类型、对象引用。</p>
+</blockquote>
+<blockquote>
+<p>虚拟机栈会出现两种异常 StackOverFlowError、OutOfMemoryError;<br>StackOverFlowError：当虚拟机栈内存不允许动态扩展时，线程的请求大小超过了虚拟机栈内存大小，就会抛出该异常。<br>OutOfMemoryError：当虚拟机栈内存允许动态扩展时，虚拟机在动态扩展时无法申请到足够的内存时，就会抛出该异常。</p>
+</blockquote>
+<blockquote>
+<p>线程私有的，生命周期和线程相同，可能出现 StackOverFlowError、OutOfMemoryError。<br>可以通过 -Xss 这个虚拟机参数指定每个线程的Java虚拟机栈内存大小 <code>java -Xss512M HackTheJava</code></p>
+</blockquote>
+<h3 id="3-本地方法栈"><a href="#3-本地方法栈" class="headerlink" title="3.本地方法栈"></a>3.本地方法栈</h3><blockquote>
+<p>与虚拟机栈几乎相同，区别在于虚拟机栈为虚拟机执行 Java 方法服务，本地方法栈是为 Native 方法服务的。<br>HotSpot 虚拟机将俩者合二为一。</p>
+</blockquote>
+<h3 id="4-堆"><a href="#4-堆" class="headerlink" title="4.堆"></a>4.堆</h3><blockquote>
+<p>堆是 Java 虚拟机管理的内存最大的区域，堆是线程共享的内存区域，在虚拟机启动时创建，存放对象实例及数组。</p>
+</blockquote>
+<blockquote>
+<p>堆是垃圾收集器管理的主要区域，也叫 GC 堆；现代垃圾收集器基本采用的都是分代收集算法，按此，可以将堆分为新生代和老年代。<br>新生代还可以细分为 Eden 区、From Survivor、To Survivor，目的是根据对象特征，更好的分配和回收内存。</p>
+</blockquote>
+<blockquote>
+<p>对象一般都会分配到 Eden 区，在进行一次新生代回收(Minor GC)后，如果对象还存活，对象进入 s0 区 或 s1 区，对象年龄+1，<br>当对象年龄到达一定程度(默认15)，对象晋升老年代。</p>
+</blockquote>
+<blockquote>
+<p>堆可以处于物理上不连续的内存空间，只要逻辑上是连续的即可，与磁盘一样；当堆内存已经用完且无法动态扩展时，会触发 OutOfMemoryError。</p>
+</blockquote>
+<blockquote>
+<p>线程共享，生命周期与虚拟机相同，可能出现 OutOfMemoryError 。<br>对象晋升到老年代的年龄阈值，可以通过参数 <code>-XX:MaxTenuringThreshold</code> 来设置。<br>可以通过 -Xms 和 -Xmx 这俩个虚拟机参数指定一个程序的堆内存大小的初始值和最大值 <code>java -Xms1M -Xmx2M HackTheJava</code>。</p>
+</blockquote>
+<h3 id="5-方法区"><a href="#5-方法区" class="headerlink" title="5.方法区"></a>5.方法区</h3><blockquote>
+<p>方法区是线程共享的内存区域，用于存放虚拟机已加载的类信息、常量、静态变量、即时编译器编译后的的代码。</p>
+</blockquote>
+<blockquote>
+<p>Java 虚拟机规范将方法区划分为堆的逻辑区域，为了与堆区分，称为 Non-Heap(非堆)，与堆相同，可以出于物理上不连续，但逻辑上连续的内存空间。</p>
+</blockquote>
+<blockquote>
+<p>HotSpot 将方法区称作”永久代”。垃圾会收集器很少回收方法区，但是进入方法区的数据并不一定是永久存在的。 </p>
+</blockquote>
+<blockquote>
+<p>JDK 1.8 将方法区移除，取而代之的是元空间，处于直接内存中， <code>-XX:MetaspaceSize</code> 可以指定元空间的大小,<br>与方法区不同，如果不指定元空间的大小，随着加载的类越来越多，虚拟机会耗尽所有可用的系统内存。</p>
+</blockquote>
+<h3 id="6-运行时常量池"><a href="#6-运行时常量池" class="headerlink" title="6.运行时常量池"></a>6.运行时常量池</h3><blockquote>
+<p>运行时常量池是方法区的一部分，用于存放编译器生成的各种字面量和符号引用,当常量池的无法向方法区申请到更多的内存时，会触发OutOfMemoryErr。</p>
+</blockquote>
+<blockquote>
+<p>字面量：字符串、基本类型的常量</p>
+</blockquote>
+<blockquote>
+<p>JDK 1.7 将运行时常量池放入了堆内存。</p>
+</blockquote>
+<h3 id="7-直接内存"><a href="#7-直接内存" class="headerlink" title="7.直接内存"></a>7.直接内存</h3><blockquote>
+<p>不属于Java 虚拟机内存，这部分内存也被频繁使用，当 Java 虚拟机内存大小 + 直接内存大小 &gt; 物理内存大小，会触发 OutOfMemoryErr。</p>
+</blockquote>
+<blockquote>
+<p>NIO 可以直接操作直接内存，在一些场景中避免了数据在 Java 堆与 Native 堆来回复制。也因此很容易操作 OutOfMemoryErr。</p>
+</blockquote>
+<h2 id="类加载与对象创建的过程"><a href="#类加载与对象创建的过程" class="headerlink" title="类加载与对象创建的过程"></a>类加载与对象创建的过程</h2><p><img src="/JVM-虚拟机/JVM-01/类加载.png" alt="类加载过程"><br><img src="/JVM-虚拟机/JVM-01/对象创建2.png" alt="对象创建过程"></p>
+<h3 id="对象创建过程"><a href="#对象创建过程" class="headerlink" title="对象创建过程"></a>对象创建过程</h3><blockquote>
+<p>1.虚拟机碰到一条 New 指令，触发对象创建，根据指令参数尝试定位运行时常量池中该类的符号引用，<br>并检查该类是否被加载、解析、初始化过。如果没有，则先进行该类加载。<br>2.类的加载，将类信息加载到方法区的过程中，静态内容(静态变量、静态代码块、静态方法)加载到静态区。</p>
+<blockquote>
+<p>①通过类加载器(ClassLoader)将字节码文件(.class)<strong><em>加载</em></strong>到虚拟机(JVM)。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>②虚拟机对字节码文件进行<strong><em>验证</em></strong>，过滤掉不符合虚拟机编译规则的文件，确保类加载的正确性。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>③在方法区中，给类的静态变量分配内存，默认初始化赋予零值(数据的系统默认值)，<strong><em>准备</em></strong>好类的静态信息。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>④将运行时常量池中的类的符号引用<strong><em>解析</em></strong>为直接引用(直接指向目标的引用指针)。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>⑤将类的静态变量显示<strong><em>初始化</em></strong>(赋予正确的初始值)</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>⑥显示初始化之后，开始执行静态的代码块。先执行父类的静态代码块，再执行子类的静态代码块。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>3.堆中为对象分配内存空间，大小在类加载时已知，分配方式有俩种：指针碰撞和空闲列表。<br>选择哪种方式分配取决于堆内存是否规整，堆内存规整取决于垃圾回收的算法是”标记-整理”还是”标记-清除”。</p>
+<blockquote>
+<p>①指针碰撞:适用于堆内存规整(没有内存碎片),已使用的内存和空闲的内存间有一个分界值指针，<br>通过指针向未使用内存移动对象内存大小位置即可。GC收集器:Serial收集器(单线程)、ParNew收集器(多线程)。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>②空闲指针:适用于堆内存不规整，虚拟机维护了一个列表，记录了空闲的内存块，<br>划分一块足够大的内存给对象，并跟新列表记录。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>4.分配到内存的对象进行实例变量赋零值。</p>
+</blockquote>
+<blockquote>
+<p>5.设置对象头，对象的元数据、对象的哈希码、对象的年龄、锁状态等。</p>
+</blockquote>
+<blockquote>
+<p>6.执行初始化，构造函数调用(入栈)，显示初始化实例变量，构造函数执行完毕(出栈)，将对象分配的内存地址赋给引用对象。</p>
+<blockquote>
+<p>调用子类构造时，默认第一行隐式调用 super()(父类构造)，若第一行显示调用 this()(子类构造),最后还是会先调用到另一个构造里的 super()。</p>
+</blockquote>
+</blockquote>
+<font colro="red">创建对象的方式有多种:new 关键字、反射(Class对象或构造对象.newInstance())、clone()、反序列化</font>
 
+<h2 id="对象的内存布局"><a href="#对象的内存布局" class="headerlink" title="对象的内存布局"></a>对象的内存布局</h2>
       
     </div>
     
@@ -681,9 +632,9 @@
       
         <div class="post-tags">
           
-          <a href="/tags/面试/" rel="tag"><i class="fa fa-tag"></i> 面试</a>
-          
           <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          
+          <a href="/tags/JVM/" rel="tag"><i class="fa fa-tag"></i> JVM</a>
           
         </div>
       
@@ -696,8 +647,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/日常积累/daily-accumulation-01-0/" rel="next" title="菜鸟冯日常踩坑 - 01">
-                <i class="fa fa-chevron-left"></i> 菜鸟冯日常踩坑 - 01
+              <a href="/Java面试/JavaInterviewMustKnow-03/" rel="next" title="菜鸟冯的面试突击 - 03">
+                <i class="fa fa-chevron-left"></i> 菜鸟冯的面试突击 - 03
               </a>
             
           </div>
@@ -705,10 +656,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Java面试/JavaInterviewMustKnow-02/" rel="prev" title="菜鸟冯的面试突击 - 02">
-                菜鸟冯的面试突击 - 02 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -913,7 +860,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础-（一）"><span class="nav-number">1.</span> <span class="nav-text">Java 基础 （一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、String"><span class="nav-number">1.2.</span> <span class="nav-text">(*)二、String</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#String-的-intern-方法"><span class="nav-number">1.2.0.0.1.</span> <span class="nav-text">String 的 intern() 方法</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#三、参数传递"><span class="nav-number">1.3.</span> <span class="nav-text">三、参数传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、类型转换"><span class="nav-number">1.4.</span> <span class="nav-text">四、类型转换</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JVM"><span class="nav-number">1.</span> <span class="nav-text">JVM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-运行时数据区-Java内存区域"><span class="nav-number">1.1.</span> <span class="nav-text">Java 运行时数据区(Java内存区域)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-程序计数器"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.程序计数器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-虚拟机栈"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.虚拟机栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-本地方法栈"><span class="nav-number">1.1.3.</span> <span class="nav-text">3.本地方法栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-堆"><span class="nav-number">1.1.4.</span> <span class="nav-text">4.堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-方法区"><span class="nav-number">1.1.5.</span> <span class="nav-text">5.方法区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-运行时常量池"><span class="nav-number">1.1.6.</span> <span class="nav-text">6.运行时常量池</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-直接内存"><span class="nav-number">1.1.7.</span> <span class="nav-text">7.直接内存</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类加载与对象创建的过程"><span class="nav-number">1.2.</span> <span class="nav-text">类加载与对象创建的过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象创建过程"><span class="nav-number">1.2.1.</span> <span class="nav-text">对象创建过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的内存布局"><span class="nav-number">1.3.</span> <span class="nav-text">对象的内存布局</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1150,9 +1097,9 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/Java面试/JavaInterviewMustKnow-01/';
-          this.page.identifier = 'Java面试/JavaInterviewMustKnow-01/';
-          this.page.title = '菜鸟冯的面试突击 - 01';
+          this.page.url = 'http://yoursite.com/JVM-虚拟机/JVM-01/';
+          this.page.identifier = 'JVM-虚拟机/JVM-01/';
+          this.page.title = '菜鸟冯带你走入 JVM - 01';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
